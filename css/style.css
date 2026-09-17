@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050d17;
+  color: white;
+}
+
+header {
+  background: #071725;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.icono {
+  width: 28px;
+  height: 28px;
+  background: #8b5cf6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.busqueda {
+  width: 430px;
+  height: 38px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.busqueda input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  margin-left: 8px;
+}
+
+.busqueda input::placeholder {
+  color: #dfe6ff;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-login {
+  background: rgba(255,255,255,0.05);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.btn-register {
+  background: #8b5cf6;
+  color: white;
+}
+
+.hero {
+  min-height: 500px;
+  background: linear-gradient(rgba(15, 12, 25, 0.7), rgba(15, 12, 25, 0.8)),
+    url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.hero-text {
+  max-width: 700px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 62px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.purple {
+  display: block;
+  color: #c7a3ff;
+}
+
+p {
+  font-size: 24px;
+  margin: 25px 0;
+  color: #f0f4ff;
+}
+
+.hero a {
+  display: inline-block;
+  background: #8b5cf6;
+  color: white;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.recomendados {
+  background: #050d17;
+  text-align: center;
+  padding: 40px 0 80px;
+}
+
+.recomendados h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .busqueda {
+    order: 3;
+    width: 100%;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
