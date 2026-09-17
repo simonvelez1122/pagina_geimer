@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080b12;
+    color: white;
+}
+
+/* ENCABEZADO */
+
+header {
+    height: 70px;
+    background: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    border-bottom: 1px solid #26344f;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* TARJETA DEL JUEGO */
+
+.juego {
+    background: #111827;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+/* IMAGEN */
+
+.imagen {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* INFORMACIÓN */
+
+.contenido {
+    padding: 30px;
+}
+
+.categoria {
+    background: #2563eb;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.contenido p {
+    color: #aeb8c9;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #71809b;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+
+/* REQUISITOS */
+
+.requisitos {
+    margin-top: 35px;
+}
+
+.requisitos h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.contenedor-requisitos {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta {
+    flex: 1;
+    background: #111827;
+    border: 1px solid #263b5c;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.tarjeta h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #aeb8c9;
+    font-size: 13px;
+    margin: 9px 0;
+    line-height: 1.4;
+}
+
+.tarjeta strong {
+    color: #e5e7eb;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .imagen {
+        height: 230px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .contenedor-requisitos {
+        flex-direction: column;
+    }
+}
