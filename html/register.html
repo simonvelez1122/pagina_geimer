@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS GAMES - Registro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/register.css">
+</head>
+<body class="register-page">
+
+  <div class="card">
+    <div class="header">
+      <div class="brand">
+        <div class="logo-box">
+          <img src="https://play-lh.googleusercontent.com/cyRQ4zDZ8dNnnCb-hkenWA00Dp96eNhk5L8EfdTC_myJy1bjIyTAz5hV0eXoYYVdTXaCXYVQo_CK0kpgZ4HtPu4" alt="Mando de videojuegos" width="28" height="28">
+        </div>
+        <span>NEXUS GAMES</span>
+      </div>
+      <a class="close-btn" href="principal.html" aria-label="Volver al inicio">
+        <i class="fa-solid fa-xmark"></i>
+      </a>
+    </div>
+
+    <div class="tabs">
+      <a class="tab" id="tab-login" href="login.html">
+        <i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión
+      </a>
+      <a class="tab active" id="tab-register" href="register.html">
+        <i class="fa-solid fa-user-plus"></i> Registrarse
+      </a>
+    </div>
+
+    <h1 class="title">Únete a Nexus</h1>
+    <p class="subtitle">Crea tu cuenta y vive la experiencia</p>
+
+    <form id="register-form">
+      <div class="input-group">
+        <label for="name">NOMBRE COMPLETO</label>
+        <div class="input-wrapper">
+          <i class="fa-regular fa-user icon-left"></i>
+          <input type="text" id="name" placeholder="Tu nombre" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="email">CORREO ELECTRÓNICO</label>
+        <div class="input-wrapper">
+          <i class="fa-regular fa-envelope icon-left"></i>
+          <input type="email" id="email" placeholder="tu@correo.com" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="password">CONTRASEÑA</label>
+        <div class="input-wrapper">
+          <i class="fa-solid fa-lock icon-left"></i>
+          <input type="password" id="password" placeholder="Mínimo 6 caracteres" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="confirm-password">CONFIRMAR CONTRASEÑA</label>
+        <div class="input-wrapper">
+          <i class="fa-solid fa-lock icon-left"></i>
+          <input type="password" id="confirm-password" placeholder="Repite tu contraseña" required>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">CREAR CUENTA</button>
+    </form>
+  </div>
+
+ 
+</body>
+</html>
