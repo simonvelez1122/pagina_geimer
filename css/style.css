@@ -17,14 +17,14 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-weight: bold;
 }
 
 .icono {
   width: 28px;
   height: 28px;
-  background: #8b5cf6;
+  background: #2b008f;
   border-radius: 8px;
   display: flex;
   align-items: center;
