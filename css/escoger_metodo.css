@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101116;
+    color: white;
+    min-height: 100vh;
+}
+
+/* BARRA */
+
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 35px;
+    background: #292d36;
+    border-bottom: 1px solid #414650;
+}
+
+.menu {
+    font-size: 25px;
+}
+
+.logo {
+    width: 38px;
+    height: 38px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h2 {
+    font-size: 20px;
+}
+
+.buscar {
+    margin-left: auto;
+    width: 270px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #4c515d;
+    background: #1d2027;
+    color: white;
+}
+
+.cuenta {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #d8d0ff;
+    color: #29233c;
+    font-weight: bold;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+    padding: 45px 0;
+}
+
+/* JUEGO */
+
+.juego {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+    margin-bottom: 35px;
+    border: 1px solid #4b525d;
+    border-radius: 14px;
+    background: #252a33;
+}
+
+.portada {
+    width: 68px;
+    height: 68px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(
+        135deg,
+        #f5e600,
+        #e7a900 48%,
+        #202020 49%
+    );
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.informacion {
+    flex: 1;
+}
+
+.informacion h2 {
+    margin-bottom: 8px;
+}
+
+.informacion p {
+    color: #aaaeb8;
+    font-size: 14px;
+}
+
+.informacion span {
+    color: #42ed91;
+    font-weight: bold;
+}
+
+.precio {
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.precio small {
+    display: block;
+    color: #aaaeb8;
+    font-size: 12px;
+}
+
+/* TÍTULO */
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #aaaeb8;
+    margin-bottom: 30px;
+}
+
+/* TARJETAS */
+
+.opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.tarjeta {
+    min-height: 450px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #48515f;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        145deg,
+        #303742,
+        #1c2027
+    );
+}
+
+.tarjeta.seleccionada {
+    border: 2px solid #aaa0ff;
+    box-shadow: 0 0 15px #aaa0ff33;
+}
+
+.icono {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #d0d4df;
+    color: #222;
+    border-radius: 10px;
+    font-size: 23px;
+}
+
+.tarjeta h2 {
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #c1c3ca;
+    line-height: 1.5;
+}
+
+.tarjeta ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.tarjeta li {
+    color: #bbbfc7;
+    margin: 12px 0;
+    font-size: 13px;
+}
+
+.tarjeta li::before {
+    content: "✓";
+    color: #42ed91;
+    margin-right: 8px;
+}
+
+.tarjeta button {
+    margin-top: auto;
+    height: 48px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #d8d0ff;
+    color: #28223a;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+
+    .buscar {
+        display: none;
+    }
+
+    .opciones {
+        grid-template-columns: 1fr;
+    }
+
+    .juego {
+        align-items: flex-start;
+    }
+}
