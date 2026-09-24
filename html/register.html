@@ -34,12 +34,12 @@
     <h1 class="title">Únete a Nexus</h1>
     <p class="subtitle">Crea tu cuenta y vive la experiencia</p>
 
-    <form id="register-form">
+    <form id="register-form" novalidate>
       <div class="input-group">
         <label for="name">NOMBRE COMPLETO</label>
         <div class="input-wrapper">
           <i class="fa-regular fa-user icon-left"></i>
-          <input type="text" id="name" placeholder="Tu nombre" required>
+          <input type="text" id="name" placeholder="Tu nombre">
         </div>
       </div>
 
@@ -47,7 +47,7 @@
         <label for="email">CORREO ELECTRÓNICO</label>
         <div class="input-wrapper">
           <i class="fa-regular fa-envelope icon-left"></i>
-          <input type="email" id="email" placeholder="tu@correo.com" required>
+          <input type="email" id="email" placeholder="tu@correo.com">
         </div>
       </div>
 
@@ -55,7 +55,7 @@
         <label for="password">CONTRASEÑA</label>
         <div class="input-wrapper">
           <i class="fa-solid fa-lock icon-left"></i>
-          <input type="password" id="password" placeholder="Mínimo 6 caracteres" required>
+          <input type="password" id="password" placeholder="Mínimo 6 caracteres">
         </div>
       </div>
 
@@ -63,7 +63,7 @@
         <label for="confirm-password">CONFIRMAR CONTRASEÑA</label>
         <div class="input-wrapper">
           <i class="fa-solid fa-lock icon-left"></i>
-          <input type="password" id="confirm-password" placeholder="Repite tu contraseña" required>
+          <input type="password" id="confirm-password" placeholder="Repite tu contraseña">
         </div>
       </div>
 
@@ -71,6 +71,7 @@
     </form>
   </div>
 
- 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../JS/register.js"></script>
 </body>
 </html>

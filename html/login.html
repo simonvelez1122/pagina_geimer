@@ -33,12 +33,12 @@
         <h1>Bienvenido de vuelta</h1>
         <p class="subtitle">Accede a tu cuenta Nexus Games</p>
 
-        <form>
+        <form id="loginForm" novalidate>
             <div class="input-group">
                 <label for="email">CORREO ELECTRÓNICO</label>
                 <div class="input-wrapper">
                     <i class="fa-regular fa-envelope"></i>
-                    <input type="email" id="email" placeholder="tu@correo.com" required>
+                    <input type="email" id="email" placeholder="tu@correo.com">
                 </div>
             </div>
 
@@ -46,12 +46,15 @@
                 <label for="password">CONTRASEÑA</label>
                 <div class="input-wrapper">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" id="password" placeholder="••••••••" required>
+                    <input type="password" id="password" placeholder="••••••••">
                 </div>
             </div>
 
             <button class="submit-btn" type="submit">INICIAR SESIÓN</button>
         </form>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/login.js"></script>
 </body>
 </html>
